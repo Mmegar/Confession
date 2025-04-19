@@ -1,0 +1,92 @@
+:root{
+    font-family: Courier;
+    --imageSize: 30%; 
+    --buttonSize: 150px;
+    --confirmBtnSize: 150px;
+    --declineBtnSize: 150px;
+
+}
+
+body{
+    margin: 0;
+    padding: 0; 
+    overflow-x: 0;
+}
+div {
+    overflow: visible;
+}
+
+#valentine-message{
+    padding-right: 50px;
+    padding-bottom: 50px;
+    color: white;
+    font-family: cursive;
+    font-size: 50px;
+}
+
+#confirmedMaomao {
+    margin-top: 50px;;
+}
+
+.maomaoImg {
+    width: var(--imageSize);
+    height: var(--imageSize+200);
+    position: relative;
+    margin-top: 10px;
+    margin-left: calc(var(--imageSize)/0.85);
+
+}
+
+.subtitle { 
+    width: calc(var(--imageSize)*2);
+    height: 10px;
+    margin-left: calc(var(--imageSize)/1.5);
+    text-align: center;
+}
+
+.hidden{
+    display: none ;
+}
+
+.button-set {
+    position: static;
+    list-style-type:none;
+    width: 50%;
+    display: flex;
+    justify-content: center;
+    margin-left: 25%;
+    overflow: visible;
+}
+
+.confirm-btn, .decline-btn { 
+    margin: 5px auto;
+    padding: 10px;
+    width: var(--buttonSize);
+    height: calc(var(--buttonSize)/3);
+    text-align: center;
+    cursor: pointer;
+    user-select: none; 
+    color: whitesmoke;
+    justify-content: center;
+    line-height: 1.5;
+
+
+}
+
+.confirm-btn {
+    background-color: green; 
+    margin-right : 10px;
+    line-height: 2;
+    width: var(--confirmBtnSize);
+    height: calc(var(--confirmBtnSize)/3); 
+
+}
+
+
+.decline-btn{
+    background-color: red;
+    margin-left: 0;
+    width: var(--declineBtnSize);
+    height: calc(var(--declineBtnSize)/3);
+}
+
